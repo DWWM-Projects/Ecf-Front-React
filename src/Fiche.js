@@ -6,9 +6,7 @@ class Fiche extends React.Component {
         return (
             <div className="card">
                 <div className="dishPicture">
-                    <div className="hoverEffect, hide">
-                        <button className="command">Commander</button>
-                    </div>
+                    <button className="command">Commander</button>
                     <img src={this.props.dishe.imageSrc} />
                 </div>                
                 <h3 className="dishName">{this.props.dishe.title}</h3>
