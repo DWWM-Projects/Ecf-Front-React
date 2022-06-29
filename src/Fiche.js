@@ -5,7 +5,12 @@ class Fiche extends React.Component {
     render() {
         return (
             <div className="card">
-                <img src={this.props.dishe.imageSrc} />
+                <div className="dishPicture">
+                    <div className="hoverEffect, hide">
+                        <button className="command">Commander</button>
+                    </div>
+                    <img src={this.props.dishe.imageSrc} />
+                </div>                
                 <h3 className="dishName">{this.props.dishe.title}</h3>
                 <p className="dishDetails">{this.props.dishe.content}</p>
                 <p className="dishPrice">{this.props.dishe.price}</p>
